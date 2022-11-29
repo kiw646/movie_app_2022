@@ -1,0 +1,21 @@
+.div {
+    text-align: center;
+    right:100%;
+}
+.button {
+    text-align: center;
+    right:100%;
+    font-size: 100px;
+}
+body {
+    background-color: #0E1731;
+  }
+   
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -1,19 +1,21 @@
 import React from 'react';
-// import axios from 'axios';
-// import Movie from './Movie';
 import './App.css';
-// import Home from './routes/Home';
 import { HashRouter, Route } from 'react-router-dom';
 import About from './routes/About';
 import Home from './routes/Home';
-
+import Navigation from './components/Navigation';
+import Detail from './routes/Detail';
+import Test from './routes/Test'
+// import tkdeks from './components/tkdeks';
 function App() {
   return (
     <HashRouter>
-      {/* <Routes> */}
-      <Route path="/" component={Home} />
+      <Route path="/Test" component={Test}/>
+      <Navigation />
+      <Route path="/" exact={true} component={Home} />
+      {/* <Route path="/test" component={test}></Route> */}
       <Route path="/about" component={About} />
-      {/* </Routes> */}
+      <Route path="/movie-detail" component={Detail} />
     </HashRouter>
   );
 }
